@@ -23,8 +23,12 @@
 					</div>
 				</div>
 			</nav>
-			<div class="content">
-				#body#
+			<div class="container" role="main">
+				<div class="row">
+					<div class="col-md-12">
+						#body#
+					</div>
+				</div>
 			</div>
 		</cfoutput>
 		<cfif url.keyExists('debug')>
