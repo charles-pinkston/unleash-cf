@@ -19,6 +19,7 @@
 					<ul class="nav navbar-nav">
 						<li><a href="#buildURL('features')#">Features</a></li>
 						<li><a href="#buildURL('database')#">DB Reference</a></li>
+						<li><a href="/testbox/test-browser/index.cfm?action=runTestBox&path=/unlease-client/specifications">Tests</a></li>
 					</ul>
 					</div>
 				</div>
