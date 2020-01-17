@@ -1,0 +1,8 @@
+{
+    "name":"unleash-cf",
+    "cfconfigfile":"./unleash-cf.json",
+    "web":{
+        "host":"127.0.0.1",
+        "webroot":"www"
+    }
+}

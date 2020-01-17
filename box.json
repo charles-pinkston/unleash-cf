@@ -1,0 +1,57 @@
+{
+    "author":"",
+    "bugs":"",
+    "changelog":"",
+    "contributors":[],
+    "dependencies":{
+        "testbox":"^3.1.0+339"
+    },
+    "description":"",
+    "devDependencies":{},
+    "documentation":"",
+    "homepage":"",
+    "ignore":[],
+    "installPaths":{
+        "testbox":"www/testbox/"
+    },
+    "instructions":"",
+    "keywords":"",
+    "license":[
+        {
+            "type":"",
+            "URL":""
+        }
+    ],
+    "location":"",
+    "name":"unleash-client",
+    "private":false,
+    "projectURL":"",
+    "repository":{
+        "type":"",
+        "URL":""
+    },
+    "scripts":{},
+    "shortDescription":"Client Library for working with Unleash",
+    "slug":"unleash-client",
+    "testbox":{
+        "bundles":"",
+        "directory": "test.unlease-client",
+	  	"labels":"",
+        "options":{},
+        "recurse":true,
+        "reporter":"",
+        "runner":[
+            {
+                "default":""
+            }
+        ],
+        "testBundles":"",
+        "testSpecs":"",
+        "testSuites":"",
+        "verbose":true,
+        "watchDelay":500,
+        "watchPaths":"**.cfc"
+    },
+    "type":"",
+    "version":"0.0.0"
+}

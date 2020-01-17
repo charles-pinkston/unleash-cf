@@ -1,0 +1,42 @@
+version: "3.6"
+
+services:
+  cfml:
+    build:
+      context: "../images/commandbox"
+    container_name: cfml
+    ports:
+      - 8080:8080
+      - 8443:8443
+    volumes:
+      - ../../:/app
+  unleash:
+    build:
+      context: "../images/unleash"
+    container_name: unleash
+    ports:
+      - 4242:4242
+    environment:
+      DATABASE_URL: postgres://unleash_user:passord@db/unleash
+    depends_on:
+      - db
+    command: > 
+      sh -c "
+        while ! nc -z db 5432; do
+          echo 'Postgres is unavailable.'
+          sleep 1
+        done
+        npm run start"
+  db:
+    container_name: db
+    environment:
+      POSTGRES_USER: "unleash_user"
+      POSTGRES_PASSWORD: "passord"
+      POSTGRES_DB: "unleash"
+    ports:
+      - 5432:5432
+    image: postgres:10-alpine
+
+volumes:
+  log_data:
+  db_data:
